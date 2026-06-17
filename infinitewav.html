@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfiniteWAV</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #6aacfc, #2575fc);
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 800px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border: 3px solid #FFA500;
+        box-shadow: 0px 0px 15px #FFA500;
+        padding: 15px;
+    }
+    #header {
+        background: linear-gradient(to bottom, #FFA500, #eb4034);
+        color: white;
+        text-align: left;
+        padding: 5px;
+        text-shadow: 2px 2px #000;
+    }
+    #header img {
+        max-width: 200px;
+        height: auto;
+        padding: 10px;
+    }
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(to right, #000080, #1e90ff);
+        color: white;
+        padding: 10px;
+        border: 2px solid #FFA500;
+        text-shadow: 3px 3px #2b2b2b;
+        margin-bottom: 20px;
+    }
+    #navbar .nav-links {
+        display: flex;
+        align-items: center;
+    }
+    #navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+    }
+    #navbar a:hover {
+        text-decoration: underline;
+    }
+        #sidebar {
+            flex: 1;
+            background-color: #FFFAF0;
+            padding: 20px;
+            border: 2px solid #eb4034;
+            margin-right: 20px;
+        }
+        #sidebar ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        #sidebar ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        #sidebar ul li img {
+            margin-right: 10px;
+            width: 48px;
+            height: 48px;
+        }
+    #search-bar {
+        display: flex;
+        align-items: center;
+    }
+    #search-bar input[type="text"] {
+        padding: 5px;
+        font-size: 16px;
+        border: 2px solid #FFA500;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+    }
+    #search-bar button {
+        padding: 5px 10px;
+        font-size: 16px;
+        background-color: #FFA500;
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    #search-bar button:hover {
+        background-color: #ff8c00;
+    }
+    #main {
+        display: flex;
+        gap: 20px;
+    }
+    #content {
+        flex: 2;
+        padding: 10px;
+    }
+    #results {
+        margin-top: 20px;
+    }
+    #footer {
+        background: linear-gradient(to bottom, #FFA500, #eb4034);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        text-shadow: 1px 1px #2b2b2b;
+        margin-top: 20px;
+        border: 2px solid #FFA500;
+    }
+</style>
+    <body>
+    <div class="container">
+        <div id="header">
+            <img src="infinitewav no background.png" alt="InfiniteWAV Logo">
+        </div>
+        <div id="navbar">
+            <div class="nav-links">
+                <a href="infinitewav.html">Home</a>
+                <a href="https://youtube.com/@InfiniteWAVMusic">Youtube channel</a>
+                <a href="audios.html">Library</a>
+            </div>
+        </div>
+        <div id="main">                
+                </div>
+            <div id="content">
+                <h2>Tons of free audio!</h2>
+                <p>Tons of free music and sound effects for you to choose! Post your own music and sound effects to grow our vast library of awesome audio!</p>
+                <h3>Search for audio</h3>
+                <div id="search-bar">
+                <input id="search-input" type="text" placeholder="Search...">
+                <button onclick="handleSearch()">Go</button>
+            </div>
+        <div id="results"></div>
+        <div id="footer">© 2026 InfiniteWAV.</div>
+    </div>
+
+
+</body></html>
